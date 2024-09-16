@@ -9,7 +9,7 @@ const animalSchema = new mongoose.Schema({
 const Animal = mongoose.model('Animal', animalSchema);
 
 const app = express();
-mongoose.connect('mongodb://unai:011110@monguito:27017/miapp?authSource=admin', );
+mongoose.connect('mongodb://unai:011110@mongo:27017/miapp?authSource=admin', );
 
 app.get('/', async (req, res) => {
     console.log('listando');
