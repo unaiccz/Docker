@@ -3,6 +3,3 @@
 
   <br>
   <hr>
-  <code>
-    docker compose up # crear y ejecutar imagen
-  </code>
