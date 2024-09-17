@@ -39,6 +39,12 @@ Este proyecto es una aplicación simple de Node.js con MongoDB. Utiliza Docker p
     ```
 
 3. La aplicación estará disponible en `http://localhost:3000`.
+4. ## Endpoints
+
+La aplicación expone dos endpoints principales:
+
+- **GET /**: Lista todos los animales en la base de datos.
+- **GET /crear**: Crea un nuevo animal en la base de datos con los valores predeterminados (`name: 'gato'`, `type: 'felino'`).
 
 ### Producción
 
