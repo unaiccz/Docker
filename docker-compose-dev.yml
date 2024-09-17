@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  api:
+    build:
+      context: .
+      dockerfile: dockerfile.dev
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    volumes:
+    - .:/home/app
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=unai
+      - MONGO_INITDB_ROOT_PASSWORD=011110
+    volumes:
+      - mongo_data:/data/db #ubicacion MONGO
+        # mysql_data:/var/lib/mysql #ubicacion MYSQL
+        # postgres_data:/var/lib/postgresql/data #ubicacion POSTGRES
+volumes:
+  mongo_data:

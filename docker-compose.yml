@@ -13,3 +13,9 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=unai
       - MONGO_INITDB_ROOT_PASSWORD=011110
+    volumes:
+      - mongo_data:/data/db #ubicacion MONGO
+        # mysql_data:/var/lib/mysql #ubicacion MYSQL
+        # postgres_data:/var/lib/postgresql/data #ubicacion POSTGRES
+volumes:
+  mongo_data:
