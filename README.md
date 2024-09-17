@@ -48,16 +48,3 @@ Este proyecto es una aplicación simple de Node.js con MongoDB. Utiliza Docker p
     ```
 
 2. La aplicación estará disponible en `http://localhost:3000`.
-
-## Scripts de npm
-
-En el archivo package.json se encuentran definidos varios scripts útiles:
-
-- `start`: Inicia la aplicación en modo producción.
-- `dev`: Inicia la aplicación en modo desarrollo con nodemon.
-
-Para ejecutar un script, usa el siguiente comando:
-```sh
-npm run <nombre_del_script>
-
-¡Espero que esta guía te sea útil!
